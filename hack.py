@@ -7,7 +7,7 @@ def main():
             file.write('X{}'.format(i))
         system('git add .')
         system('git commit -m "commit #{}"'.format(i))
-        if not i%100:
+        if not i%1000:
             system('git push')
 
         i += 1
